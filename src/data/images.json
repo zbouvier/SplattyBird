@@ -1,0 +1,9 @@
+{
+	"player-idle":"images/player-idle.png",
+    "player-run-left":"images/player-run-left.png",
+    "player-run-right":"images/player-run-right.png",
+    "ground":"images/ground.png",
+    "platform":"images/platform.png",
+    "sky":"images/sky.png",
+    "goo":"images/goo.png"
+}

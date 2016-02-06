@@ -1,0 +1,39 @@
+{
+  "name": "splat-ecs-starter-project",
+  "version": "0.0.0",
+  "description": "A Sample game",
+  "private": true,
+  "main": "src/game.js",
+  "scripts": {
+    "build": "webpack",
+    "clean": "rimraf build",
+    "lint": "eslint .",
+    "start": "webpack-dev-server --hot --inline --content-base build --port 4000",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SplatJS/splat-ecs-starter-project.git"
+  },
+  "keywords": [],
+  "author": "Eric Lathrop <eric@ericlathrop.com> (http://ericlathrop.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SplatJS/splat-ecs-starter-project/issues"
+  },
+  "homepage": "https://github.com/SplatJS/splat-ecs-starter-project",
+  "devDependencies": {
+    "eslint": "^1.10.1",
+    "eslint-loader": "^1.1.1",
+    "eslint-plugin-json": "^1.2.0",
+    "file-loader": "^0.8.5",
+    "image-webpack-loader": "^1.6.2",
+    "json-loader": "^0.5.4",
+    "rimraf": "^2.4.4",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "splat-ecs": "3.2.0"
+  }
+}

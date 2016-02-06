@@ -1,0 +1,117 @@
+{
+	"main": [
+		{
+			"id": 0,
+			"name": "camera",
+			"camera": true,
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"matchCanvasSize": true
+		},
+		{
+			"id": 1,
+			"player": true,
+			"strokeStyle": "red",
+			"image":{
+				"name": "player-idle"
+			},
+			"position": {
+				"x": 100,
+				"y": 100
+			},
+			"size": {
+				"width": 32,
+				"height": 48
+			},
+			"velocity": {
+				"x": 0,
+				"y": 0
+			},
+			"gravity": 0.02,
+			"playerController2d": {
+				"up": "up",
+				"down": "down",
+				"left": "left",
+				"right": "right"
+			},
+			"movement2d": {
+				"upMax": -0.5,
+				"downMax": 0.5,
+				"leftMax": -0.5,
+				"rightMax": 0.5,
+				"upAccel": -0.02,
+				"downAccel": 0.02,
+				"leftAccel": -0.02,
+				"rightAccel": 0.02
+			},
+			"friction": {
+				"x": 0.97,
+				"y": 0.97
+			},
+			"playableArea": {
+				"x": 0,
+				"y": 0,
+				"width": 800,
+				"height": 600
+			},
+			"collisions":[]
+		},
+		{
+			"id": 2,
+			"name": "background",
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"size": {
+				"width": 800,
+				"height": 600
+			},
+			"image": {
+				"name": "sky"
+			}
+		},
+		{
+			"id": 4,
+			"platform": true,
+			"position": {
+				"x": 500,
+				"y": 0
+			},
+			"velocity": {
+				"x": -0.5,
+				"y": 0
+			},
+			"size": {
+				"width": 32,
+				"height": 256
+			},
+			"collisions": [],
+			"image":{
+				"name":"ground"
+			}
+		},
+		{
+			"id": 5,
+			"platform": true,
+			"position": {
+				"x": 500,
+				"y": 340
+			},
+			"velocity": {
+				"x": -0.5,
+				"y": 0
+			},
+			"size": {
+				"width": 32,
+				"height": 256
+			},
+			"collisions": [],
+			"image":{
+				"name":"ground"
+			}
+		}
+	]
+}

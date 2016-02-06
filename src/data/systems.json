@@ -1,0 +1,138 @@
+{
+	"simulation": [
+		{
+			"name": "./systems/simulation/track-last-position",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/match-canvas-size",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/advance-timers",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/advance-animations",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/simulation/jump",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/control-player",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/apply-movement-2d",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/apply-velocity",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/apply-friction",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/follow-parent",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/box-collider",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/constrain-to-playable-area",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/simulation/resolve-collisions",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/simulation/gravity",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/simulation/spawn-pipes",
+			"scenes": [
+				"main"
+			]
+		}
+	],
+	"renderer": [
+		{
+			"name": "splat-ecs/lib/systems/clear-screen",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/viewport-move-to-camera",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/renderer/sample-renderer-system",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/draw-image",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/draw-rectangles",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/viewport-reset",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/draw-frame-rate",
+			"scenes": [
+				"main"
+			]
+		}
+	]
+}
