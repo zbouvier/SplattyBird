@@ -13,6 +13,12 @@
 			]
 		},
 		{
+			"name": "splat-ecs/lib/systems/match-center",
+			"scenes": [
+				"main"
+			]
+		},
+		{
 			"name": "splat-ecs/lib/systems/advance-timers",
 			"scenes": [
 				"main"
@@ -38,6 +44,12 @@
 		},
 		{
 			"name": "splat-ecs/lib/systems/apply-movement-2d",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/simulation/gravity",
 			"scenes": [
 				"main"
 			]
@@ -74,12 +86,6 @@
 		},
 		{
 			"name": "./systems/simulation/resolve-collisions",
-			"scenes": [
-				"main"
-			]
-		},
-		{
-			"name": "./systems/simulation/gravity",
 			"scenes": [
 				"main"
 			]

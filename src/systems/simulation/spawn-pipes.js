@@ -13,9 +13,12 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 			}
 		}
 		if (rightMostPipe <= 800) {
-			var pipe = game.instantiatePrefab("pipeTop");
-			var newPipePosition = game.entities.get(pipe,"position")
-			newPipePosition.x = rightMostPipe + 100
+			var topPipe = game.instantiatePrefab("pipeTop");
+			var topPipePosition = game.entities.get(topPipe,"position");
+			topPipePosition.x = rightMostPipe + 300;
+			var bottomPipe = game.instantiatePrefab("pipeBottom");
+			var bottomPipePosition = game.entities.get(bottomPipe,"position");
+			bottomPipePosition.x = rightMostPipe + 300;
 		}
 	});
 };
