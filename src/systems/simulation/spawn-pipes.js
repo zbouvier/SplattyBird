@@ -3,22 +3,25 @@
 module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 	ecs.add(function() { // eslint-disable-line no-unused-vars
 		var pipes = game.entities.find("platform");
-		var rightMostPipe = 0;
+		var rightMostPipeX = 0;
 		for (var i = 0; i < pipes.length; i++) {
 			var position = game.entities.get(pipes[i], "position");
 			var size = game.entities.get(pipes[i], "size");
 			var rightSide = position.x + size.width;
-			if (rightMostPipe < rightSide) {
-				rightMostPipe = rightSide;
+			if (rightMostPipeX < rightSide) {
+				rightMostPipeX = rightSide;
 			}
 		}
-		if (rightMostPipe <= 800) {
+		if (rightMostPipeX <= 800) {
+			var randomPipeHeight = Math.floor((Math.random() * 200));
 			var topPipe = game.instantiatePrefab("pipeTop");
 			var topPipePosition = game.entities.get(topPipe,"position");
-			topPipePosition.x = rightMostPipe + 300;
+			topPipePosition.x = rightMostPipeX + 300;
+			topPipePosition.y += randomPipeHeight;
 			var bottomPipe = game.instantiatePrefab("pipeBottom");
 			var bottomPipePosition = game.entities.get(bottomPipe,"position");
-			bottomPipePosition.x = rightMostPipe + 300;
+			bottomPipePosition.x = rightMostPipeX + 300;
+			bottomPipePosition.y += randomPipeHeight;
 		}
 	});
 };

@@ -3,8 +3,8 @@
 		"id": 4,
 		"platform": true,
 		"position": {
-			"x": 300,
-			"y": 0
+			"x": 500,
+			"y": -512
 		},
 		"velocity": {
 			"x": -0.2,
@@ -12,7 +12,7 @@
 		},
 		"size": {
 			"width": 32,
-			"height": 256
+			"height": 1024
 		},
 		"collisions": [],
 		"image":{
@@ -24,7 +24,7 @@
 		"platform": true,
 		"position": {
 			"x": 500,
-			"y": 480
+			"y": 700
 		},
 		"velocity": {
 			"x": -0.2,
@@ -32,7 +32,7 @@
 		},
 		"size": {
 			"width": 32,
-			"height": 256
+			"height": 512
 		},
 		"collisions": [],
 		"image":{
