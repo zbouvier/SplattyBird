@@ -22,6 +22,10 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 			var bottomPipePosition = game.entities.get(bottomPipe,"position");
 			bottomPipePosition.x = rightMostPipeX + 300;
 			bottomPipePosition.y += randomPipeHeight;
+			var pipePoint = game.instantiatePrefab("pipePoint");
+			var pipePointPosition = game.entities.get(pipePoint, "position");
+			pipePointPosition.x = rightMostPipeX = rightMostPipeX + 300;
+			pipePointPosition.y += randomPipeHeight;
 		}
 	});
 };

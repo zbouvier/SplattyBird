@@ -1,11 +1,12 @@
 {
 	"pipeTop": {
-		"id": 4,
+		"obstacle": [1],
 		"platform": true,
 		"position": {
 			"x": 500,
 			"y": -512
 		},
+		"points": 1,
 		"velocity": {
 			"x": -0.2,
 			"y": 0
@@ -19,8 +20,28 @@
 			"name":"ground"
 		}
 	},
+	"pipePoint": {
+		"obstacle": [0],
+		"platform": true,
+		"position": {
+			"x": 400,
+			"y": 600
+		},
+		"velocity": {
+			"x": -0.2,
+			"y": 0
+		},
+		"size": {
+			"width": 32,
+			"height": 64
+		},
+		"collisions": [],
+		"image":{
+			"name":"ground"
+		}
+	},
 	"pipeBottom": {
-		"id": 5,
+		"obstacle": [1],
 		"platform": true,
 		"position": {
 			"x": 500,
