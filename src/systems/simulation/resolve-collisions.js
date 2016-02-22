@@ -3,16 +3,19 @@
 module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 	ecs.add(function resolveCollisions() { // eslint-disable-line no-unused-vars
 		var entitiesCollision = game.entities.find("collisions");
+		var entitiesObstacle = game.entities.find("obstacle");
 		var foundCollisions = false;
 		var foundObstacle = false;
+		var obstacle = game.entities.get(4, "obstacle");
 		for (var i = 0; i < entitiesCollision.length; i++) {
 			var collisions = game.entities.get(entitiesCollision[i], "collisions");
-			var obstacle = game.entities.get(4,)
 			if (collisions.length > 0) {
 				foundCollisions = true;
 				break;
 			}
-			if ()
+		}
+		if (obstacle === 1) {
+			foundObstacle = true;
 		}
 		if (foundCollisions === true && foundObstacle === true) {
 			var entitiesWithVelocity = game.entities.find("velocity");
