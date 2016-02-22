@@ -13,11 +13,9 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 				foundCollisions = true;
 				break;
 			}
-<<<<<<< HEAD
 		}
 		if (obstacle === 1) {
 			foundObstacle = true;
-=======
 			if ()//I do not know what to put here
 			// I tried game.entities.get but I think that needs an array.
 		}
