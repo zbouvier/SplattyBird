@@ -13,11 +13,16 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 				foundCollisions = true;
 				break;
 			}
+<<<<<<< HEAD
 		}
 		if (obstacle === 1) {
 			foundObstacle = true;
+=======
+			if ()//I do not know what to put here
+			// I tried game.entities.get but I think that needs an array.
+>>>>>>> f6ac782b5e065342d24170939478297096c2125d
 		}
-		if (foundCollisions === true && foundObstacle === true) {
+		if (foundCollisions === true && foundObstacle === true) { // to make this true
 			var entitiesWithVelocity = game.entities.find("velocity");
 			for (i = 0; i < entitiesWithVelocity.length; i++) {
 				game.entities.remove(entitiesWithVelocity[i], "velocity");
