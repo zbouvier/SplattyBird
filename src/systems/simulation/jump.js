@@ -6,6 +6,7 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 		var velocity = game.entities.get(entity, "velocity");
 
 		if (game.input.buttonPressed("jump")) {
+			game.sounds.play("jump");
 			velocity.y  = -1.2;
 		}
 

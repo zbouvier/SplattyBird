@@ -1,1 +1,6 @@
-{}
+{
+
+"jump": "sounds/Jump.wav",
+    "pickup": "sounds/Pickup_Coin.wav"
+
+}

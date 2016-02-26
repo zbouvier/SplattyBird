@@ -117,19 +117,7 @@
 			]
 		},
 		{
-			"name": "splat-ecs/lib/systems/draw-rectangles",
-			"scenes": [
-				"main"
-			]
-		},
-		{
 			"name": "splat-ecs/lib/systems/viewport-reset",
-			"scenes": [
-				"main"
-			]
-		},
-		{
-			"name": "splat-ecs/lib/systems/draw-frame-rate",
 			"scenes": [
 				"main"
 			]

@@ -35,10 +35,7 @@
 			"width": 1,
 			"height": 100
 		},
-		"collisions": [],
-		"image":{
-			"name":"ground"
-		}
+		"collisions": []
 	},
 	"pipeBottom": {
 		"obstacle": true,
