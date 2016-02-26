@@ -1,2 +1,15 @@
 {
+	"player-flap-right-f4": [{
+    "filmstripFrames": 4,
+    "time": 100,
+    "properties": {
+        "image": {
+            "name": "player-flap-right-f4",
+            "sourceX": 0,
+            "sourceY": 0,
+            "sourceWidth": 168,
+            "sourceHeight": 48
+        }
+    }
+}]
 }

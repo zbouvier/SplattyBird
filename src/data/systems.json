@@ -117,6 +117,12 @@
 			]
 		},
 		{
+			"name": "./systems/renderer/draw-background",
+			"scenes": [
+				"main"
+			]
+		},
+		{
 			"name": "splat-ecs/lib/systems/draw-image",
 			"scenes": [
 				"main"

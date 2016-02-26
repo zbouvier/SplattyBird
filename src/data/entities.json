@@ -21,8 +21,12 @@
 				"angle": 0
 			},
 			"score": 0,
-			"image":{
-				"name": "player-idle"
+			"animation": {
+			    "time": 0,
+			    "frame": 0,
+			    "loop": true,
+			    "speed": 1,
+			    "name": "player-flap-right-f4"
 			},
 			"position": {
 				"x": 100,
@@ -54,7 +58,7 @@
 		},
 		{
 			"id": 2,
-			"name": "background",
+			"background": true,
 			"position": {
 				"x": 0,
 				"y": 0
@@ -63,12 +67,7 @@
 				"width": 1600,
 				"height": 900
 			},
-			"image": {
-				"name": "sky"
-			},
-			"zindex": {
-				"zindex": -1
-			}
+			"color": "#73C8A9"
 		}
 
 	]

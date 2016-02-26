@@ -16,7 +16,7 @@
 		},
 		"collisions": [],
 		"image":{
-			"name":"ground"
+			"name":"treeTop"
 		}
 	},
 	"pipePoint": {
@@ -54,7 +54,7 @@
 		},
 		"collisions": [],
 		"image":{
-			"name":"ground"
+			"name":"treeBottom"
 		}
 	}
 }
