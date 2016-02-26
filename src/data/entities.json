@@ -17,6 +17,9 @@
 			"id": 1,
 			"player": true,
 			"strokeStyle": "red",
+			"rotation": {
+				"angle": 0
+			},
 			"score": 0,
 			"image":{
 				"name": "player-idle"
@@ -47,7 +50,21 @@
 				"width": 1600,
 				"height": 900
 			},
-			"collisions":[]
+			"collisions":[],
+			"timers": {
+				"rotateUp": {
+					"running": false,
+					"time": 0,
+					"max": 100,
+					"script": "./scripts/returnFromUp"
+				},
+				"rotateDown": {
+					"running": false,
+					"time": 0,
+					"max": 100,
+					"script": "./scripts/returnFromDown"
+				}
+			}
 		},
 		{
 			"id": 2,
@@ -67,5 +84,6 @@
 				"zindex": -1
 			}
 		}
+
 	]
 }

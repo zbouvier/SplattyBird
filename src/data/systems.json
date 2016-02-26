@@ -95,6 +95,18 @@
 			"scenes": [
 				"main"
 			]
+		},
+		{
+			"name": "./systems/simulation/rotateUp",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/simulation/rotateDown",
+			"scenes": [
+				"main"
+			]
 		}
 	],
 	"renderer": [
