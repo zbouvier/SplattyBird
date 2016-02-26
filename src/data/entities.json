@@ -55,7 +55,7 @@
 				"rotateUp": {
 					"running": false,
 					"time": 0,
-					"max": 100,
+					"max": 500,
 					"script": "./scripts/returnFromUp"
 				},
 				"rotateDown": {

@@ -6,7 +6,7 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 		var timers = game.entities.get(entity, "timers");
 		if (timers.rotateUp.running) {
 			var rotation = game.entities.get(entity, "rotation");
-			rotation.angle = 2;
+			rotation.angle += (Math.PI * 2) * (elapsed / 1000);
 		}
 	}, "rotateUpSearch");
 };
