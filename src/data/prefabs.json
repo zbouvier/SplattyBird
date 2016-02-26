@@ -1,6 +1,6 @@
 {
 	"pipeTop": {
-		"obstacle": 1,
+		"obstacle": true,
 		"platform": true,
 		"position": {
 			"x": 500,
@@ -21,7 +21,7 @@
 		}
 	},
 	"pipePoint": {
-		"obstacle": 0,
+		"obstacle": false,
 		"platform": true,
 		"position": {
 			"x": 400,
@@ -41,7 +41,7 @@
 		}
 	},
 	"pipeBottom": {
-		"obstacle": 0,
+		"obstacle": true,
 		"platform": true,
 		"position": {
 			"x": 500,
