@@ -97,13 +97,7 @@
 			]
 		},
 		{
-			"name": "./systems/simulation/rotateUp",
-			"scenes": [
-				"main"
-			]
-		},
-		{
-			"name": "./systems/simulation/rotateDown",
+			"name": "./systems/simulation/rotate",
 			"scenes": [
 				"main"
 			]

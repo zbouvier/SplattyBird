@@ -50,21 +50,7 @@
 				"width": 1600,
 				"height": 900
 			},
-			"collisions":[],
-			"timers": {
-				"rotateUp": {
-					"running": false,
-					"time": 0,
-					"max": 500,
-					"script": "./scripts/returnFromUp"
-				},
-				"rotateDown": {
-					"running": false,
-					"time": 0,
-					"max": 100,
-					"script": "./scripts/returnFromDown"
-				}
-			}
+			"collisions":[]
 		},
 		{
 			"id": 2,
