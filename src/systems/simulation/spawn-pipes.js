@@ -3,7 +3,7 @@
 module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 	ecs.add(function() { // eslint-disable-line no-unused-vars
 		var pipes = game.entities.find("platform");
-		var rightMostPipeX = 0;
+		var rightMostPipeX = 300;
 		for (var i = 0; i < pipes.length; i++) {
 			var position = game.entities.get(pipes[i], "position");
 			var size = game.entities.get(pipes[i], "size");

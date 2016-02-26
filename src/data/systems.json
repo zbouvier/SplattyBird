@@ -85,6 +85,12 @@
 			]
 		},
 		{
+			"name": "./systems/simulation/collectPoints",
+			"scenes": [
+				"main"
+			]
+		},
+		{
 			"name": "./systems/simulation/spawn-pipes",
 			"scenes": [
 				"main"
@@ -100,12 +106,6 @@
 		},
 		{
 			"name": "splat-ecs/lib/systems/viewport-move-to-camera",
-			"scenes": [
-				"main"
-			]
-		},
-		{
-			"name": "./systems/renderer/draw-score",
 			"scenes": [
 				"main"
 			]
@@ -130,6 +130,12 @@
 		},
 		{
 			"name": "splat-ecs/lib/systems/draw-frame-rate",
+			"scenes": [
+				"main"
+			]
+		},
+		{
+			"name": "./systems/renderer/draw-score",
 			"scenes": [
 				"main"
 			]

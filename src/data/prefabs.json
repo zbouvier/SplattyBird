@@ -6,7 +6,6 @@
 			"x": 500,
 			"y": -512
 		},
-		"points": 1,
 		"velocity": {
 			"x": -0.2,
 			"y": 0
@@ -23,17 +22,18 @@
 	"pipePoint": {
 		"obstacle": false,
 		"platform": true,
+		"points": true,
 		"position": {
 			"x": 400,
-			"y": 600
+			"y": 550
 		},
 		"velocity": {
 			"x": -0.2,
 			"y": 0
 		},
 		"size": {
-			"width": 32,
-			"height": 64
+			"width": 1,
+			"height": 100
 		},
 		"collisions": [],
 		"image":{
