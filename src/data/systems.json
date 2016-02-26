@@ -73,6 +73,12 @@
 			]
 		},
 		{
+			"name": "./systems/simulation/animation",
+			"scenes": [
+				"main"
+			]
+		},
+		{
 			"name": "splat-ecs/lib/systems/constrain-to-playable-area",
 			"scenes": [
 				"main"
