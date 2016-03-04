@@ -4,6 +4,7 @@ var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 
 var Splat = require("splat-ecs");
+require("./index.html");
 
 // This is some webpack magic to ensure the dynamically required scripts are loaded
 
@@ -16,6 +17,20 @@ var localSystemRequire = require.context("./systems", true, /\.js$/);
 
 var localScriptPath = "./scripts";
 var localScriptRequire = require.context("./scripts", true, /\.js$/);
+
+function generateManifest(files, folder) {
+	return files.reduce(function(manifest, file) {
+		var basename = file.substr(2);
+		manifest[basename] = folder + "/" + basename;
+		return manifest;
+	}, {});
+}
+
+var imageContext = require.context("./images", true, /\.(jpe?g|png|gif|svg)$/i);
+var imageManifest = generateManifest(imageContext.keys(), "images");
+
+var soundContext = require.context("./sounds", true, /\.(mp3|ogg|wav)$/i);
+var soundManifest = generateManifest(soundContext.keys(), "sounds");
 
 var localDataPath = "./data";
 var localDataRequire = require.context("./data", true, /\.json$/);
@@ -33,6 +48,12 @@ function customRequire(path) {
 		var scriptName = "./" + path.substr(localScriptPath.length + 1) + ".js";
 		return localScriptRequire(scriptName);
 	}
+	if (path === "./data/images") {
+		return imageManifest;
+	}
+	if (path === "./data/sounds") {
+		return soundManifest;
+	}
 	if (path.indexOf(localDataPath) === 0) {
 		var dataName = "./" + path.substr(localDataPath.length + 1) + ".json";
 		return localDataRequire(dataName);
@@ -40,9 +61,6 @@ function customRequire(path) {
 	console.error("Unable to load module: \"", path, "\"");
 	return undefined;
 }
-require("./index.html");
-require.context("./images", true, /\.(jpe?g|png|gif|svg)$/i);
-require.context("./sounds", true, /\.(mp3|ogg|wav)$/i);
 
 var game = new Splat.Game(canvas, customRequire);
 

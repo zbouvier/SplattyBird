@@ -79,7 +79,7 @@
 			]
 		},
 		{
-			"name": "splat-ecs/lib/systems/constrain-to-playable-area",
+			"name": "splat-ecs/lib/systems/constrain-position",
 			"scenes": [
 				"main"
 			]
