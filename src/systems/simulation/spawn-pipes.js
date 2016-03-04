@@ -1,9 +1,19 @@
 "use strict";
 
+var gapBetweenPipe = 200;
+
+function spawnPipePiece(game, prefab, lastX, heightAdjustment) {
+	var id = game.instantiatePrefab(prefab);
+	var position = game.entities.get(id,"position");
+	position.x = lastX + gapBetweenPipe;
+	position.y += heightAdjustment;
+}
+
+
 module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 	ecs.add(function() { // eslint-disable-line no-unused-vars
 		var pipes = game.entities.find("platform");
-		var rightMostPipeX = 300;
+		var rightMostPipeX = gapBetweenPipe;
 		for (var i = 0; i < pipes.length; i++) {
 			var position = game.entities.get(pipes[i], "position");
 			var size = game.entities.get(pipes[i], "size");
@@ -14,18 +24,9 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 		}
 		if (rightMostPipeX <= 800) {
 			var randomPipeHeight = Math.floor((Math.random() * 200));
-			var topPipe = game.instantiatePrefab("pipeTop");
-			var topPipePosition = game.entities.get(topPipe,"position");
-			topPipePosition.x = rightMostPipeX + 300;
-			topPipePosition.y += randomPipeHeight;
-			var bottomPipe = game.instantiatePrefab("pipeBottom");
-			var bottomPipePosition = game.entities.get(bottomPipe,"position");
-			bottomPipePosition.x = rightMostPipeX + 300;
-			bottomPipePosition.y += randomPipeHeight;
-			var pipePoint = game.instantiatePrefab("pipePoint");
-			var pipePointPosition = game.entities.get(pipePoint, "position");
-			pipePointPosition.x = rightMostPipeX = rightMostPipeX + 300;
-			pipePointPosition.y += randomPipeHeight;
+			spawnPipePiece(game, "pipeTop", rightMostPipeX, randomPipeHeight);
+			spawnPipePiece(game, "pipePoint", rightMostPipeX, randomPipeHeight);
+			spawnPipePiece(game, "pipeBottom", rightMostPipeX, randomPipeHeight);
 		}
 	});
 };

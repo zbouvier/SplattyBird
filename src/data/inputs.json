@@ -5,5 +5,21 @@
     "device": "keyboard",
     "key": "space"
   }]
+
+},
+"restart": {
+	"type": "button",
+	"inputs": [{
+	 "device": "keyboard",
+	 "key": "r"
+ },
+{
+	"device": "touch",
+	"x": 0,
+	"y": 0,
+	"width":200,
+	"height": 75
+	}]
+
 }
 }

@@ -7,7 +7,7 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 
 		if (game.inputs.buttonPressed("jump")) {
 			game.sounds.play("Jump.wav");
-			velocity.y  = -1.2;
+			velocity.y  = -0.8;
 		}
 
 	}, "jump");

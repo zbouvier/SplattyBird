@@ -7,5 +7,5 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 		var position = game.entities.get(entity, "position");
 		context.fillStyle = color;
 		context.fillRect(position.x, position.y, size.width, size.height);
-	} ,"background");
+	} ,"color");
 };

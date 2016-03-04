@@ -9,13 +9,22 @@
 		{
 			"name": "splat-ecs/lib/systems/match-canvas-size",
 			"scenes": [
-				"main"
+				"main",
+				 "titleScreen"
 			]
 		},
 		{
 			"name": "splat-ecs/lib/systems/match-center",
 			"scenes": [
-				"main"
+				"main",
+				 "titleScreen"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/match-center-x",
+			"scenes": [
+				"main",
+				 "titleScreen"
 			]
 		},
 		{
@@ -107,43 +116,69 @@
 			"scenes": [
 				"main"
 			]
+		},
+		{
+			"name": "./systems/simulation/restart",
+			"scenes": [
+				"main",
+				 "titleScreen"
+			]
 		}
 	],
 	"renderer": [
 		{
 			"name": "splat-ecs/lib/systems/clear-screen",
 			"scenes": [
-				"main"
+				"main",
+				 "titleScreen"
 			]
 		},
 		{
 			"name": "splat-ecs/lib/systems/viewport-move-to-camera",
 			"scenes": [
-				"main"
+				"main",
+				 "titleScreen"
 			]
 		},
 		{
 			"name": "./systems/renderer/draw-background",
 			"scenes": [
-				"main"
+				"main",
+				 "titleScreen"
 			]
 		},
 		{
 			"name": "splat-ecs/lib/systems/draw-image",
 			"scenes": [
-				"main"
+				"main",
+				 "titleScreen"
 			]
 		},
 		{
-			"name": "splat-ecs/lib/systems/viewport-reset",
+			"name": "splat-ecs/lib/systems/draw-rectangles",
 			"scenes": [
-				"main"
+				"main",
+				 "titleScreen"
 			]
 		},
 		{
 			"name": "./systems/renderer/draw-score",
 			"scenes": [
 				"main"
+			]
+		},
+		{
+			"name": "./systems/renderer/crop-game",
+			"scenes": [
+				"main",
+				 "titleScreen"
+			]
+		},
+		{
+			"name": "splat-ecs/lib/systems/viewport-reset",
+			"scenes": [
+				"main",
+				 "titleScreen"
 			]
 		}
 	]

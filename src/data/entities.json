@@ -40,7 +40,7 @@
 				"x": 0,
 				"y": 0
 			},
-			"gravity": 0.02,
+			"gravity": 0.01,
 			"playerController2d": {
 				"jump": "space"
 			},
@@ -61,11 +61,44 @@
 				"y": 0
 			},
 			"size": {
+				"width": 288,
+				"height": 512
+			},
+			"color": "#73C8A9",
+			"viewPort": true
+		}
+
+	],
+	"titleScreen":[
+		{
+			"id": 0,
+			"background": true,
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"size": {
 				"width": 1600,
 				"height": 900
 			},
+			"matchCanvasSize": true,
 			"color": "#73C8A9"
+		},
+		{
+			"id": 1,
+			"color": "#fff",
+			"button": true,
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"size": {
+				"width": 200,
+				"height": 75
+			},
+			"matchCenterX": {
+				"id": 0
+			}
 		}
-
 	]
 }
