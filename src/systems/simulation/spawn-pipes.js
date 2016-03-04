@@ -22,7 +22,7 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 				rightMostPipeX = rightSide;
 			}
 		}
-		if (rightMostPipeX <= 800) {
+		if (rightMostPipeX <= 288) {
 			var randomPipeHeight = Math.floor((Math.random() * 200));
 			spawnPipePiece(game, "pipeTop", rightMostPipeX, randomPipeHeight);
 			spawnPipePiece(game, "pipePoint", rightMostPipeX, randomPipeHeight);

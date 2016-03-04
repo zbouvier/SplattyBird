@@ -1,7 +1,9 @@
 {
 	"pipeTop": {
 		"obstacle": true,
-		"platform": true,
+		"repeat": {
+			"every": 200
+		},
 		"position": {
 			"x": 0,
 			"y": -250
@@ -22,7 +24,10 @@
 	"pipePoint": {
 		"obstacle": false,
 		"platform": true,
-		"points": true,
+		"repeat": {
+			"every": 200
+		},
+		"points": 1,
 		"position": {
 			"x": 400,
 			"y": 70
@@ -32,14 +37,16 @@
 			"y": 0
 		},
 		"size": {
-			"width": 1,
+			"width": 52,
 			"height": 200
 		},
 		"collisions": []
 	},
 	"pipeBottom": {
 		"obstacle": true,
-		"platform": true,
+		"repeat": {
+			"every": 200
+		},
 		"position": {
 			"x": 0,
 			"y": 220

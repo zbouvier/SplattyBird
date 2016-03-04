@@ -66,6 +66,48 @@
 			},
 			"color": "#73C8A9",
 			"viewPort": true
+		},
+		{
+			"id": 3,
+			"collisions": [],
+			"obstacle": true,
+			"position": {
+				"x": 0,
+				"y": 400,
+				"z": 2
+			},
+			"size": {
+				"width": 336,
+				"height": 112
+			},
+			"velocity": {
+				"x": -0.13,
+				"y": 0
+			},
+			"image": {
+				"name": "groud.png"
+			}
+		},
+		{
+			"id": 4,
+			"collisions": [],
+			"obstacle": true,
+			"position": {
+				"x": 336,
+				"y": 400,
+				"z": 2
+			},
+			"velocity": {
+				"x": -0.13,
+				"y": 0
+			},
+			"size": {
+				"width": 336,
+				"height": 112
+			},
+			"image": {
+				"name": "groud.png"
+			}
 		}
 
 	],

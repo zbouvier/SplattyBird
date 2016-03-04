@@ -6,10 +6,11 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 		var score = game.entities.get(entity, "score");
 		for (var i = 0; i < collisions.length; i++) {
 			var other = collisions[i];
-			if (game.entities.get(other, "points")) {
+			var points = game.entities.get(other, "points");
+			if (points) {
 				game.entities.destroy(other);
 				game.sounds.play("Pickup_Coin.wav");
-				game.entities.set(entity, "score", score + 1);
+				game.entities.set(entity, "score", score + points);
 			}
 		}
 	}, "player");
