@@ -19,8 +19,9 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 		var rightMostEntityX = findRightMostEntity(pipes, game);
 		if (rightMostEntityX <= 288) {
 			var spawnPipe = game.require("./scripts/spawn-pipe");
+			var spawnGround = game.require("./scripts/spawn-ground");
 			spawnPipe(game, rightMostEntityX);
-//			spawnPipePiece(game, "ground", rightMostEntityX, 0);
+			spawnGround(game, rightMostEntityX);
 		}
 	});
 };
