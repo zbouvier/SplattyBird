@@ -87,60 +87,6 @@
 			"image": {
 				"name": "groud.png"
 			}
-		},
-		{
-			"id": 4,
-			"collisions": [],
-			"obstacle": true,
-			"position": {
-				"x": 336,
-				"y": 400,
-				"z": 2
-			},
-			"velocity": {
-				"x": -0.13,
-				"y": 0
-			},
-			"size": {
-				"width": 336,
-				"height": 112
-			},
-			"image": {
-				"name": "groud.png"
-			}
-		}
-
-	],
-	"titleScreen":[
-		{
-			"id": 0,
-			"background": true,
-			"position": {
-				"x": 0,
-				"y": 0
-			},
-			"size": {
-				"width": 1920,
-				"height": 1080	
-			},
-			"matchCanvasSize": true,
-			"color": "#73C8A9"
-		},
-		{
-			"id": 1,
-			"color": "#fff",
-			"button": true,
-			"position": {
-				"x": 0,
-				"y": 0
-			},
-			"size": {
-				"width": 200,
-				"height": 75
-			},
-			"matchCenterX": {
-				"id": 0
-			}
 		}
 	]
 }

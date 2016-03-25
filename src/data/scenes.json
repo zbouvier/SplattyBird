@@ -1,11 +1,6 @@
 {
-	"titleScreen" : {
-	 "first": true,
-	 "onEnter": "./scripts/titleScreen-enter",
-	 "onExit": "./scripts/titleScreen-exit"
- },
  "main": {
-	"first": false,
+	"first": true,
   "onEnter": "./scripts/main-enter",
   "onExit": "./scripts/main-exit"
 }

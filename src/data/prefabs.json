@@ -19,7 +19,8 @@
 		"collisions": [],
 		"image":{
 			"name":"tree-top.png"
-		}
+		},
+		"treeSpawner": false
 	},
 	"pipePoint": {
 		"obstacle": false,
@@ -40,7 +41,8 @@
 			"width": 52,
 			"height": 200
 		},
-		"collisions": []
+		"collisions": [],
+		"treeSpawner": false
 	},
 	"pipeBottom": {
 		"obstacle": true,
@@ -62,7 +64,8 @@
 		"collisions": [],
 		"image":{
 			"name":"tree-bottom.png"
-		}
+		},
+		"treeSpawner": false
 	},
 		"ground": {
 		"collisions": [],
