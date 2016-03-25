@@ -106,7 +106,7 @@
 			]
 		},
 		{
-			"name": "./systems/simulation/spawn-pipes",
+			"name": "./systems/simulation/spawnRepeatedEntities",
 			"scenes": [
 				"main"
 			]

@@ -64,6 +64,29 @@
 			"name":"tree-bottom.png"
 		}
 	},
+		"ground": {
+		"collisions": [],
+		"obstacle": true,
+		"position": {
+			"x": 0,
+			"y": 400,
+			"z": 2
+		},
+		"size": {
+			"width": 336,
+			"height": 112
+		},
+		"repeat": {
+			"every": 200
+		},
+		"velocity": {
+			"x": -0.13,
+			"y": 0
+		},
+		"image": {
+			"name": "groud.png"
+		}
+	},
 	"tryAgain": {
 		"position": {
 			"x": 300,

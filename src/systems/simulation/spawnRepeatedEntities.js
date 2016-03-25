@@ -1,5 +1,7 @@
 "use strict";
 
+var gapBetweenPipe = 200;
+
 function spawnPipePiece(game, prefab, lastX, heightAdjustment) {
 	var id = game.instantiatePrefab(prefab);
 	var position = game.entities.get(id,"position");
@@ -7,20 +9,25 @@ function spawnPipePiece(game, prefab, lastX, heightAdjustment) {
 	position.y += heightAdjustment;
 }
 
-module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
-	game.entities.registerSearch("repeatSearch",["size", "position", "repeat"]);
 
-	ecs.addEach(function(entity, elapsed) { // eslint-disable-line no-unused-vars
-		var position = game.entities.get(entity, "position");
-		var size = game.entities.get(entity, "size");
-		var repeat = game.entities.get(entity, "repeat");
-		var screenSize = game.entities.get(2, "size")
-		if (position.x + size.width <= screenSize.width - repeat.every ) {
-			var spawnX = position.x + size.width + repeat.every
-			var randomPipeHeight = Math.floor((Math.random() * 200));
-			spawnPipePiece(game, "pipeTop", spawnX, randomPipeHeight);
-			spawnPipePiece(game, "pipePoint", spawnX, randomPipeHeight);
-			spawnPipePiece(game, "pipeBottom", spawnX, randomPipeHeight);
+module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
+	ecs.add(function() { // eslint-disable-line no-unused-vars
+		var pipes = game.entities.find("platform");
+		var rightMostPipeX = gapBetweenPipe;
+		for (var i = 0; i < pipes.length; i++) {
+			var position = game.entities.get(pipes[i], "position");
+			var size = game.entities.get(pipes[i], "size");
+			var rightSide = position.x + size.width;
+			if (rightMostPipeX < rightSide) {
+				rightMostPipeX = rightSide;
+			}
 		}
-	}, "repeatSearch");
+		if (rightMostPipeX <= 288) {
+			var randomPipeHeight = Math.floor((Math.random() * 200));
+			spawnPipePiece(game, "pipeTop", rightMostPipeX, randomPipeHeight);
+			spawnPipePiece(game, "pipePoint", rightMostPipeX, randomPipeHeight);
+			spawnPipePiece(game, "pipeBottom", rightMostPipeX, randomPipeHeight);
+			spawnPipePiece(game, "ground", rightMostPipeX, 0);
+		}
+	});
 };

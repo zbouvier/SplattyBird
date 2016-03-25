@@ -9,6 +9,7 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 			if (obstacle) {
 				var entitiesWithVelocity = game.entities.find("velocity");
 				for (i = 0; i < entitiesWithVelocity.length; i++) {
+					game.switchScene("titleScreen")
 					game.entities.remove(entitiesWithVelocity[i], "velocity");
 				}
 			}
