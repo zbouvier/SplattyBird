@@ -17,6 +17,7 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 				deleteAllComponents(game, "velocity");
 				deleteAllComponents(game, "spawner");
 				hasCollided = true;
+				game.instantiatePrefab("restartButton");
 			}
 		}
 		if (hasCollided) {

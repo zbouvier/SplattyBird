@@ -1,10 +1,16 @@
 {
  "jump": {
   "type": "button",
-  "inputs": [{
+  "inputs": [
+		{
     "device": "keyboard",
     "key": "space"
-  }]
+  },
+	{
+    "device": "mouse",
+    "key": 0
+  }
+]
 
 },
 "restart": {
