@@ -75,6 +75,7 @@
 			"y": 400,
 			"z": 2
 		},
+		"ground": true,
 		"size": {
 			"width": 336,
 			"height": 112

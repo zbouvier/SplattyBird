@@ -1,6 +1,7 @@
 "use strict";
 
 module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
+	game.entities.registerSearch("collectPoints", ["player", "collisions", "score"]);
 	ecs.addEach(function collectPoints(entity, elapsed) { // eslint-disable-line no-unused-vars
 		var collisions = game.entities.get(entity, "collisions");
 		var score = game.entities.get(entity, "score");
@@ -13,6 +14,6 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 				game.entities.set(entity, "score", score + points);
 			}
 		}
-	}, "player");
+	}, "collectPoints");
 
 };

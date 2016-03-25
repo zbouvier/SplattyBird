@@ -14,14 +14,13 @@ function findRightMostEntity(entities, game) {
 }
 
 module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
-	ecs.add(function() { // eslint-disable-line no-unused-vars
-		var pipes = game.entities.find("platform");
+	ecs.addEach(function(entity) { // eslint-disable-line no-unused-vars
+		var spawner = game.entities.get(entity, "spawner");
+		var pipes = game.entities.find(spawner.search);
 		var rightMostEntityX = findRightMostEntity(pipes, game);
-		if (rightMostEntityX <= 288) {
-			var spawnPipe = game.require("./scripts/spawn-pipe");
-			var spawnGround = game.require("./scripts/spawn-ground");
-			spawnPipe(game, rightMostEntityX);
-			spawnGround(game, rightMostEntityX);
+		if (rightMostEntityX <= spawner.threshold) {
+			var spawnScript = game.require(spawner.script);
+			spawnScript(game, rightMostEntityX);
 		}
-	});
+	},"spawner");
 };

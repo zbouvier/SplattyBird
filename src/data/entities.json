@@ -87,6 +87,22 @@
 			"image": {
 				"name": "groud.png"
 			}
+		},
+		{
+			"id": 4,
+			"spawner": {
+				"search": "platform",
+				"threshold": 288,
+				"script": "./scripts/spawn-pipe"
+			}
+		},
+		{
+			"id": 5,
+			"spawner": {
+				"search": "ground",
+				"threshold": 288,
+				"script": "./scripts/spawn-ground"
+			}
 		}
 	]
 }
