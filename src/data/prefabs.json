@@ -115,6 +115,22 @@
 		},
 		"matchCenterX": {
 			"id": 2
-		}
+		},
+		"color": "#000"
+	},
+	"titleScreen": {
+		"position": {
+			"x": 0,
+			"y": 100
+		},
+		"size": {
+			"width": 200,
+			"height": 50
+		},
+		"matchCenterX": {
+			"id": 2
+		},
+		"color": "#000"
 	}
+
 }

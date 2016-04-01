@@ -18,6 +18,7 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 				deleteAllComponents(game, "spawner");
 				hasCollided = true;
 				game.instantiatePrefab("restartButton");
+				game.instantiatePrefab("titleScreen");
 			}
 		}
 		if (hasCollided) {
