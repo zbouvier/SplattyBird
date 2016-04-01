@@ -2,6 +2,7 @@
 	"main": [
 		{
 			"id": 0,
+			"startOfGame":true,
 			"name": "camera",
 			"camera": true,
 			"position": {
@@ -15,12 +16,14 @@
 		},
 		{
 			"id": 1,
+			"startOfGame":true,
 			"player": true,
 			"strokeStyle": "red",
 			"rotation": {
 				"angle": 0
 			},
 			"score": 0,
+			"fails": 0,
 			"animation": {
 			    "time": 0,
 			    "frame": 0,
@@ -34,13 +37,12 @@
 			},
 			"size": {
 				"width": 30,
-				"height": 46
+				"height": 40
 			},
 			"velocity": {
 				"x": 0,
 				"y": 0
 			},
-			"gravity": 0.01,
 			"playerController2d": {
 				"jump": "space"
 			},
@@ -55,6 +57,7 @@
 		},
 		{
 			"id": 2,
+			"startOfGame":true,
 			"background": true,
 			"position": {
 				"x": 0,
@@ -89,11 +92,23 @@
 			}
 		},
 		{
-			"id": 4,
-			"spawner": {
-				"search": "platform",
-				"threshold": 288,
-				"script": "./scripts/spawn-pipe"
+			"id": 6,
+			"button": {
+				"script": "./scripts/startGame"
+			},
+			"startOfGame": true,
+			"collisions": [],
+			"position": {
+				"x": 0,
+				"y": 350,
+				"z": 2
+			},
+			"matchCenterX": {
+				"id": 2
+			},
+			"size": {
+				"width": 100,
+				"height": 50
 			}
 		},
 		{

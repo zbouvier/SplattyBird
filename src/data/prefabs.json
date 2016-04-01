@@ -1,5 +1,6 @@
 {
 	"pipeTop": {
+		"wantToSpawn": false,
 		"obstacle": true,
 		"repeat": {
 			"every": 200
@@ -23,6 +24,7 @@
 		"treeSpawner": false
 	},
 	"pipePoint": {
+		"wantToSpawn": false,
 		"obstacle": false,
 		"platform": true,
 		"repeat": {
@@ -45,6 +47,7 @@
 		"treeSpawner": false
 	},
 	"pipeBottom": {
+		"wantToSpawn": false,
 		"obstacle": true,
 		"repeat": {
 			"every": 200
@@ -104,7 +107,9 @@
 		}
 	},
 	"restartButton": {
-		"gameOverScreen": true,
+		"button": {
+			"script": "./scripts/restartGame"
+		},
 		"position": {
 			"x": 0,
 			"y": 350
@@ -131,6 +136,14 @@
 			"id": 2
 		},
 		"color": "#000"
+	},
+	"pipeSpawner": {
+		"startOfGame": true,
+		"spawner": {
+			"search": "platform",
+			"threshold": 288,
+			"script": "./scripts/spawn-pipe"
+		}
 	}
 
 }

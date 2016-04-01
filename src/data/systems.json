@@ -118,7 +118,7 @@
 			]
 		},
 		{
-			"name": "./systems/simulation/restart",
+			"name": "./systems/simulation/handleButtonPress",
 			"scenes": [
 				"main"
 			]

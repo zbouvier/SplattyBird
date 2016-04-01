@@ -13,13 +13,12 @@ function isMouseInside(game, viewPort, container) {
 }
 var background = 0;
 module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
-	ecs.addEach(function restart(entity, elapsed) { // eslint-disable-line no-unused-vars
-		if (game.inputs.buttonPressed("jump")) {
-			isMouseInside(game, background, entity);
-		}
+	ecs.addEach(function handleButtonPress(entity, elapsed) { // eslint-disable-line no-unused-vars
+		var button = game.entities.get(entity, "button");
 		if ((game.inputs.buttonPressed("jump") || game.inputs.buttonPressed("restart")) && isMouseInside(game, background, entity)) {
-			game.switchScene("main");
+			var script = game.require(button.script);
+			script(entity, game);
 		}
-	}, "gameOverScreen");
+	}, "button");
 
 };
