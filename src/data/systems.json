@@ -154,13 +154,6 @@
 			]
 		},
 		{
-			"name": "splat-ecs/lib/systems/draw-rectangles",
-			"scenes": [
-				"main",
-				 "titleScreen"
-			]
-		},
-		{
 			"name": "./systems/renderer/draw-score",
 			"scenes": [
 				"main"
