@@ -18,6 +18,7 @@
 			"id": 1,
 			"startOfGame":true,
 			"player": true,
+			"highscoreHolder": 0,
 			"strokeStyle": "red",
 			"rotation": {
 				"angle": 0

@@ -25,6 +25,7 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 				game.entities.set(entity, "highscoreHolder", 1);
 				game.instantiatePrefab("restartButton");
 				game.instantiatePrefab("titleScreen");
+				game.sounds.play("Explosion33.wav");
 				if (score > highscore) {
 					game.entities.set(entity, "highscore", score);
 					saveData.set({

@@ -13,15 +13,15 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 		var highscore = game.entities.get(entity, "highscore");
 		var viewPort = game.entities.find("viewPort") [0];
 		var viewPortSize = game.entities.get(viewPort, "size");
-		var highscoreHolder = game.entities.find("highscoreHolder") [0];
+		var highscoreHolder = game.entities.get(entity, "highscoreHolder");
 		context.fillStyle = "#fff";
 		context.strokeStyle = "#000";
 		context.lineWidth = 3;
 		context.font = "bold 39px sans serif";
 		if (highscoreHolder === 1) {
 			centerText(context, highscore.toString(), 0, 200, viewPortSize);
-			context.font = "bold 15px sans serif"
-			centerText(context, "High score :", -75, 190, viewPortSize)
+			context.font = "bold 15px sans serif";
+			centerText(context, "High Score :", -75, 190, viewPortSize);
 		}
 
 	} ,"player");
