@@ -1,12 +1,14 @@
 "use strict";
 
-var player = 2;
 var saveData = require("splat-ecs/lib/save-data");
 module.exports = function(game) { // eslint-disable-line no-unused-vars
-	saveData.get("highscore", function(hs) {
-		game.entities.set(player, "highscore", hs);
+	var player = game.entities.find("player") [0];
+	saveData.get("highscore", function(err, hs) {
+		if (hs !== undefined) {
+			game.entities.set(player, "highscore", hs.highscore);
+		}
 	});
+
 	game.scaleCanvasToFitRectangle(288,512);
-	var score = game.entities.get(player, "score");
 
 };
