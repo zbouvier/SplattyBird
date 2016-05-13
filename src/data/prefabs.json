@@ -115,13 +115,15 @@
 			"y": 350
 		},
 		"size": {
-			"width": 100,
-			"height": 50
+			"width": 40,
+			"height": 14
 		},
 		"matchCenterX": {
 			"id": 2
 		},
-		"color": "#000"
+		"image": {
+			"name": "btn-start.png"
+		}
 	},
 	"titleScreen": {
 		"position": {
@@ -129,13 +131,15 @@
 			"y": 100
 		},
 		"size": {
-			"width": 200,
-			"height": 50
+			"width": 97,
+			"height": 33
 		},
 		"matchCenterX": {
 			"id": 2
 		},
-		"color": "#000"
+		"image": {
+			"name": "logo.png"
+		}
 	},
 	"pipeSpawner": {
 		"startOfGame": true,

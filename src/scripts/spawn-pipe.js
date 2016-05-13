@@ -8,8 +8,12 @@ function spawnPipePiece(game, prefab, lastX, heightAdjustment) {
 	position.y += heightAdjustment;
 }
 
+
 module.exports = function(game, rightMostEntityX) { // eslint-disable-line no-unused-vars
 	var randomPipeHeight = Math.floor((Math.random() * 225));
+	if (randomPipeHeight >= 212) {
+		randomPipeHeight === Math.floor((Math.random() * 225));
+	}
 	spawnPipePiece(game, "pipeTop", rightMostEntityX, randomPipeHeight);
 	spawnPipePiece(game, "pipePoint", rightMostEntityX, randomPipeHeight);
 	spawnPipePiece(game, "pipeBottom", rightMostEntityX, randomPipeHeight);

@@ -21,7 +21,7 @@ module.exports = function(ecs, game) { // eslint-disable-line no-unused-vars
 		if (highscoreHolder === 1) {
 			centerText(context, highscore.toString(), 0, 200, viewPortSize);
 			context.font = "bold 15px sans serif";
-			centerText(context, "High Score :", -75, 190, viewPortSize);
+			centerText(context, "High Score : ", -75, 190, viewPortSize);
 		}
 
 	} ,"player");
